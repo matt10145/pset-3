@@ -12,14 +12,16 @@ const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
   console.log("\nInvalid.")
-} else if (amount < MIN || amount > MAX) {
-    console.log("\nInvalid.")
-} else {
-    convertPennies = amount * 100;
-    quarters = Math.floor(convertPennies/25);
-    dimes = Math.floor((convertPennies -= (quarters*25))/10);
-    nickels = Math.floor((convertPennies -= (dimes*10))/5);
-    pennies = Math.floor((convertPennies -= (nickels*5))/1);
+}
+else if (amount < MIN || amount > MAX) {
+  console.log("\nInvalid.")
+}
+else {
+  convertPennies = amount * 100;
+  quarters = Math.floor(convertPennies/25);
+  dimes = Math.floor((convertPennies -= (quarters*25))/10);
+  nickels = Math.floor((convertPennies -= (dimes*10))/5);
+  pennies = Math.floor((convertPennies -= (nickels*5))/1);
 
-    console.log(`\n${quarters} quarters, ${dimes} dimes, ${nickels} nickels, ${pennies} pennies.`)
+  console.log(`\n${quarters} quarters, ${dimes} dimes, ${nickels} nickels, ${pennies} pennies.`)
 }
