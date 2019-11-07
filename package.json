@@ -1,5 +1,5 @@
 {
-  "name": "pset-3-starter-code",
+  "name": "pset-3",
   "version": "1.0.0",
   "dependencies": {
     "readline-sync": "^1.4.10"
