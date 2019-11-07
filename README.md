@@ -1,41 +1,6 @@
 # Problem Set 3
 
-It's time to put your skills to the test. This problem set focuses on programming in JavaScript. More specifically, it focuses on using conditional statements to introduce branching logic to your programs.
-
-## Getting Started
-
-To get started, create a [GitHub](https://github.com/) repository to store your code. When you're finished, clone my skeleton to get all of the starter code and instructions. Setup a remote to push your code to your repository instead of mine.
-
-### Setup
-
-1. Login to your GitHub account and create a new repository named `pset-3`.
-2. In the terminal, navigate to your `APCSP` directory on the `Desktop`.
-```
-$ cd ~/Desktop/APCSP
-```
-3. Clone my skeleton repository into a directory named `pset-3`.
-```
-$ git clone git@github.com:ap-principles-ucvts/pset-3-skeleton.git pset-3
-````
-4. Change into your newly created `pset-3` directory.
-```
-$ cd pset-3
-```
-5. Overwrite the remote, which originally points at my skeleton repository.
-```
-$ git remote rename origin upstream
-```
-6. Add a new remote that points at your `pset-3` repository. Replace `YOUR-USERNAME` with your actual username.
-```
-$ git remote add origin git@github.com:YOUR-USERNAME/pset-3.git
-```
-7. Install the required packages for reading user input. This command should be executed in the `pset-3` folder, and will create a `node_modules` folder that contains everything you need.
-```
-$ npm install
-```
-8. Open up the `change.js` file, which is in the `src` folder. All your `.js` files should go in the `src` folder.
-
-The first exercise is partially done for you. You'll be on your own for the rest. There are a lot of exercises in this problem set, but none of them are too challenging. Take your time and try not to get frustrated.
+By Matthew Hui
 
 ## Exercises
 
