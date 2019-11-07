@@ -9,20 +9,20 @@ const C_LOWER_THRESHOLD = 70;
 const D_LOWER_THRESHOLD = 60;
 
 if (gradeInput <= A_UPPER_THRESHOLD && gradeInput >= A_LOWER_THRESHOLD) {
-  console.log("\nYou received an A.");
+  console.log("\nYou received an A.\n");
 }
 else if (gradeInput < A_LOWER_THRESHOLD && gradeInput >= B_LOWER_THRESHOLD) {
-  console.log("\nYou received a B.");
+  console.log("\nYou received a B.\n");
 }
 else if (gradeInput < B_LOWER_THRESHOLD && gradeInput >= C_LOWER_THRESHOLD) {
-  console.log("\nYou received a C.");
+  console.log("\nYou received a C.\n");
 }
 else if (gradeInput < C_LOWER_THRESHOLD && gradeInput >= D_LOWER_THRESHOLD) {
-  console.log("\nYou received a D.");
+  console.log("\nYou received a D.\n");
 }
 else if (gradeInput < D_LOWER_THRESHOLD && gradeInput >= 0) {
-  console.log("\nYou received an F.");
+  console.log("\nYou received an F.\n");
 }
 else {
-  console.log("\nInvalid.");
+  console.log("\nInvalid.\n");
 }
