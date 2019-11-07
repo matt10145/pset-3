@@ -2,6 +2,9 @@ const readlineSync = require("readline-sync");
 
 const MIN = 0.01;
 const MAX = 0.99;
+const QUARTER_VALUE = 25;
+const DIME_VALUE = 10;
+const NICKEL_VALUE = 5;
 
 let quarters = 0;
 let dimes = 0;
@@ -18,10 +21,10 @@ else if (amount < MIN || amount > MAX) {
 }
 else {
   convertPennies = amount * 100;
-  quarters = Math.floor(convertPennies/25);
-  dimes = Math.floor((convertPennies -= (quarters*25))/10);
-  nickels = Math.floor((convertPennies -= (dimes*10))/5);
-  pennies = Math.floor((convertPennies -= (nickels*5))/1);
+  quarters = Math.floor(convertPennies/QUARTER_VALUE);
+  dimes = Math.floor((convertPennies -= (quarters*QUARTER_VALUE))/DIME_VALUE);
+  nickels = Math.floor((convertPennies -= (dimes*DIME_VALUE))/NICKEL_VALUE);
+  pennies = Math.floor((convertPennies -= (nickels*NICKEL_VALUE)));
 
-  console.log(`\n${quarters} quarters, ${dimes} dimes, ${nickels} nickels, ${pennies} pennies.\n`)
+  console.log(`\n${quarters} quarters, ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies.\n`)
 }
